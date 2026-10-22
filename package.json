@@ -1,0 +1,57 @@
+{
+  "name": "apidownloader",
+  "version": "1.3.1",
+  "description": "Universal media & document downloader library for Node.js \u2014 TikTok, YouTube, Spotify, Twitter, Instagram, Scribd-ready. Extract direct download links in one call.",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexusdevbot/apidownloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nexusdevbot/apidownloader/issues"
+  },
+  "homepage": "https://github.com/nexusdevbot/apidownloader#readme",
+  "keywords": [
+    "apidownloader",
+    "downloader",
+    "instagram",
+    "link-resolver",
+    "media-downloader",
+    "resolver",
+    "scraper",
+    "social-media",
+    "spotify",
+    "tiktok",
+    "twitter",
+    "unshorten",
+    "youtube"
+  ],
+  "scripts": {
+    "test": "node test/test.js",
+    "bundle": "esbuild index.js --bundle --platform=node --format=cjs --minify --outfile=bundle.cjs",
+    "preversion": "npm run bundle",
+    "prepare": "npm run bundle"
+  },
+  "license": "MIT",
+  "author": "coflyn",
+  "dependencies": {
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.61.1",
+    "playwright-extra": "4.3.6",
+    "puppeteer-core": "^25.3.0",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  }
+}
