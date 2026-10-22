@@ -175,7 +175,6 @@ async function resolveTikTok(url) {
 
 ## 📝 Notes
 
-- **Original engine by [coflyn/scrapr](https://github.com/coflyn/scrapr)** — forked & published here as `apidownloader`. Credit ke author asli 💙
 - License: [MIT](LICENSE) — bebas dipakai untuk komersial & personal.
 - Gunakan dengan bijak. Bukan untuk aktivitas yang melanggar ToS platform terkait.
 
